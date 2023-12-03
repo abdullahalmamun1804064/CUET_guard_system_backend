@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Civil Engineering",
+    "code": "CE"
+  },
+  {
+    "name": "Disaster Engineering And Management",
+    "code": "DEM"
+  },
+  {
+    "name": "Water Resources Engineering",
+    "code": "WRE"
+  },
+  {
+    "name": "Mechanical Engineering",
+    "code": "ME"
+  },
+  {
+    "name": "Petroleum And Mining Engineering",
+    "code": "PME"
+  },
+  {
+    "name": "Mechatronics & Industrial Engineering",
+    "code": "MIE"
+  },
+  {
+    "name": "Electrical And Electronics Engineering",
+    "code": "EEE"
+  },
+  {
+    "name": "Computer Science & Engineering",
+    "code": "CSE"
+  },
+  {
+    "name": "Electronics & Telecommunication Engineering",
+    "code": "ETE"
+  },
+  {
+    "name": "Biomedical Engineering",
+    "code": "BME"
+  },
+  {
+    "name": "Architecture",
+    "code": "ARCH"
+  },
+  {
+    "name": "Urban & Regional Planning",
+    "code": "URP"
+  },
+  {
+    "name": "Humanities",
+    "code": "HUM"
+  },
+  {
+    "name": "Physics",
+    "code": "PHY"
+  },
+  {
+    "name": "Chemistry",
+    "code": "CHEM"
+  },
+  {
+    "name": "Mathematics",
+    "code": "MATH"
+  },
+  {
+    "name": "Materials Science And Engineering",
+    "code": "MSE"
+  },
+  {
+    "name": "Nuclear Engineering",
+    "code": "NE"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-01-01",
+    "end_date": "2023-12-31",
+    "designation": "Chairperson",
+    "designation_value": 1
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-02-01",
+    "end_date": "2023-11-30",
+    "designation": "Vice Chair",
+    "designation_value": 2
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-03-01",
+    "end_date": "2023-10-31",
+    "designation": "Secretary",
+    "designation_value": 3
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-04-01",
+    "end_date": "2023-09-30",
+    "designation": "Treasurer",
+    "designation_value": 4
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-05-01",
+    "end_date": "2023-08-31",
+    "designation": "Member",
+    "designation_value": 5
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-06-01",
+    "end_date": "2023-07-31",
+    "designation": "Advisor",
+    "designation_value": 6
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-07-01",
+    "end_date": "2023-06-30",
+    "designation": "Coordinator",
+    "designation_value": 7
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-08-01",
+    "end_date": "2023-05-31",
+    "designation": "Spokesperson",
+    "designation_value": 8
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-09-01",
+    "end_date": "2023-04-30",
+    "designation": "Organizer",
+    "designation_value": 9
+  },
+  {
+    "members": "651171b96cb3aa10c589bf33",
+    "start_date": "2023-10-01",
+    "end_date": "2023-03-31",
+    "designation": "Assistant",
+    "designation_value": 10
+  }
+]
