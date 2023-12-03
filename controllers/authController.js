@@ -1,10 +1,10 @@
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const sendToken = require('../utils/jwtToken');
 const ErrorHandler = require('../utils/errorHandler');
+const User = require('../models/user');
 
 // Register a user   => /api/v1/register
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
-
 
     const { name, email, password, confirmPassword } = req.body;
 
@@ -16,18 +16,10 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
             name,
             email,
             password,
-            id,
-            batch,
-            department,
             role: 'user'
         })
-        const sub_plan = await new SubscriptionPlan({
-            name: 'Free',
-            price: 0,
-            user: user._id,
-            paymentStatus: 'Completed',
-        })
-        await sub_plan.save();
+        
+        await user.save();
    
 
     sendToken(user, 200, res);
@@ -65,6 +57,7 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
 
 // Logout user   =>   /api/v1/logout
 exports.logout = catchAsyncErrors(async (req, res, next) => {
+    console.log("logout------");
     res.cookie('token', null, {
         expires: new Date(Date.now()),
         httpOnly: true
