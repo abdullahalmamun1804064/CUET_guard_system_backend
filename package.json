@@ -8,7 +8,7 @@
     "server": "nodemon index.js",
     "dev": "SET NODE_ENV=DEVELOPMENT& nodemon index.js",
     "prod": "SET NODE_ENV=PRODUCTION& nodemon index.js",
-    "seeder":"node utils/seeder.js"
+    "seeder": "node utils/seeder.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +28,6 @@
     "validator": "^13.9.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.3"
   }
 }
