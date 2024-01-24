@@ -23,11 +23,16 @@ app.use('*', cors({
 
 const auth = require('./routes/auth');
 const event = require('./routes/event');
+const post = require('./routes/post');
+
+
+
 
 
 
 app.use('/api/v1', auth)
 app.use('/api/v1/events', event);
+app.use('/api/v1/post', post);
 
 
 

@@ -1,23 +1,12 @@
-const Department = require('../models/department');
-const Batch = require('../models/batch');
-const JobField = require('../models/jobField');
-const JobOrganization = require('../models/jobOrg');
-const Event = require('../models/event');
-const JobPost = require('../models/jobPost');
-const Committee = require('../models/committee');
+
+const Post = require('../models/post');
 
 
 
 const dotenv = require('dotenv');
 const connectDatabase = require('../config/database');
 
-const dept = require('../data/dept');
-const batch = require('../data/batch');
-const jb = require('../data/jobField');
-const jobOrg = require('../data/jobOrg');
-const event = require('../data/event');
-const jobPost = require('../data/jobPost.json');
-const committee= require('../data/committee.json');
+const post = require('../data/post.json');
 
 
 // Setting dotenv file
@@ -30,10 +19,10 @@ const seedProducts = async () => {
     try {
         // Modify the data before inserting
 
-        await JobPost.deleteMany();
+        await Post.deleteMany();
         console.log('Products are deleted');
 
-        await JobPost.insertMany(jobPost); // Insert the modified data
+        await Post.insertMany(post); // Insert the modified data
         console.log('All Products are added.')
 
         process.exit();
