@@ -109,7 +109,7 @@ exports.deletePost = catchAsyncErrors(async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: "Job post deleted successfully",
+      message: "Job post deleted successfully", 
     });
   } catch (error) {
     return next(new ErrorHandler("Failed to delete Job Post", 500));
