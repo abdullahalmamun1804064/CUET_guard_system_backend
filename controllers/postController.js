@@ -58,19 +58,22 @@ exports.update = catchAsyncErrors(async (req, res, next) => {
   try {
     const { id } = req.params;
 
+    console.log(id);
+
     const { title, description, isApprove, userId } = req.body;
+
+
 
     const post = await Post.findById(id);
 
     if (!post) {
       return next(new ErrorHandler("Job post not found", 404));
     }
-    if (post.postedBy.toString() !== userId) {
-      return next(
-        new ErrorHandler("Unauthorized: You cannot Update this Job Post", 403),
-      );
-    }
-
+    // if (post.postedBy.toString() !== req.user.id) {
+    //   return next(
+    //     new ErrorHandler("Unauthorized: You cannot Update this Job Post", 403),
+    //   );
+    // }
     if (title) post.title = title;
     if (description) post.description = description;
     if (isApprove) post.isApprove = isApprove;
@@ -90,19 +93,19 @@ exports.deletePost = catchAsyncErrors(async (req, res, next) => {
   try {
     const { id } = req.params;
     const { userId } = req.body;
-    const post = await Post.findById(id);
+    const post = await Post.findById(id); 
 
     if (!post) {
       return next(new ErrorHandler("Job post not found", 404));
     }
 
-    if (post.postedBy.toString() !== userId) {
-      return next(
-        new ErrorHandler("Unauthorized: You cannot delete this Job Post", 403),
-      );
-    }
+    // if (post.postedBy.toString() !== userId) {
+    //   return next(
+    //     new ErrorHandler("Unauthorized: You cannot delete this Job Post", 403),
+    //   );
+    // }
 
-    await post.deleteOne({ _id: id });
+    await post.deleteOne({ _id: id }); 
 
     res.status(200).json({
       success: true,
