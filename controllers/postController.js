@@ -105,7 +105,7 @@ exports.deletePost = catchAsyncErrors(async (req, res, next) => {
     //   );
     // }
 
-    await post.deleteOne({ _id: id });
+    await post.deleteOne({ _id: id }); 
 
     res.status(200).json({
       success: true,
