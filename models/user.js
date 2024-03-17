@@ -4,26 +4,22 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
 
 
-
-
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, 'Please tell us your name!'],
+        required: [true, 'Please provide your name!'],
         maxLength: [30, 'Your name cannot exceed 30 characters'],
     },
-
     email: {
         type: String,
         required: [true, 'Please provide your email'],
         unique: true,
         validate: [validator.isEmail, 'Please provide a cuet email'],
-
     },
     password: {
         type: String,
         required: [true, 'Please provide a password'],
-        minlength: [6, 'Your password must be longer than 6 characters'],
+        minlength: [6, 'Your password must be longer than 8 characters'],
         select: false
     },
     avatar: {
@@ -35,7 +31,6 @@ const userSchema = new mongoose.Schema({
             type: String,
             // required: true
             default: "https://previews.123rf.com/images/kritchanut/kritchanut1406/kritchanut140600093/29213195-male-silhouette-avatar-profile-picture.jpg"
-
         }
     },
     role: {
@@ -94,7 +89,4 @@ userSchema.methods.getResetPasswordToken = function () {
     return resetToken
 
 }
-
-
-
 module.exports = mongoose.model('User', userSchema);

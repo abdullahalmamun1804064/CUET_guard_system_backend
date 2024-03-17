@@ -34,3 +34,4 @@ const postSchema = new mongoose.Schema({
 // Additional fields, middleware, methods
 
 module.exports = mongoose.model('post', postSchema);
+

@@ -21,13 +21,10 @@ const eventSchema = new mongoose.Schema({
     image: {
         public_id: {
             type: String,
-
         },
         url: {
             type: String,
-
             default: "https://previews.123rf.com/images/kritchanut/kritchanut1406/kritchanut140600093/29213195-male-silhouette-avatar-profile-picture.jpg"
-
         }
     },
     end_time: {
@@ -47,6 +44,4 @@ const eventSchema = new mongoose.Schema({
         default: Date.now
     }
 });
-
-
 module.exports = mongoose.model('Event', eventSchema);
